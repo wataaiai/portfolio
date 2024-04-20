@@ -1,0 +1,158 @@
+/* body全体 */
+body {
+  max-width: 1080px;
+  margin: 10px 10px;
+} 
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #ff9900;
+  font-family: "Impact" , sans-serif;
+  letter-spacing: 5px;
+  margin: 30px 450px 30px 450px;
+  border: solid 2px #565656;
+  border-radius: 8px;
+}
+
+/* ナビゲーションメニュー */
+nav {
+  margin: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 80px;
+  left: 650px;
+
+}
+
+nav a {
+  margin-top: auto;
+  text-decoration: none;
+  font-size: 28px;
+  color: #ff9900;
+  font-family: "HiraKakuProN-W6" , sans-serif;
+}
+
+div > a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav a:link {
+  color: #ff9900;
+}
+
+nav a:visited {
+  color: #565656;
+}
+
+nav a:hover {
+  color: #565656;
+  text-decoration: underline #ff9900;
+}
+
+nav a:active {
+  color: #565656;
+}
+
+/* メイン画像  */
+.main-photo {
+  width: 100%;
+  display: flex; 
+  flex: content;
+}
+
+.main-photo > a > img {
+  width: 500px;
+  height: 250px;
+}
+
+/* キャッチコピー */
+.catch {
+  line-height: 2px;
+  text-align: left;
+  padding: 15px 0;
+  margin-left: 60px;
+  color: #565656;
+  position: relative;
+}
+
+/* 一期一会 */
+.blend {
+  display: flex;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  margin-top: 70px;
+}
+
+.blend p {
+  box-sizing: border-box;
+  color: #565656;
+  font-size: 38px;
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+
+.shape1 {
+  background: #f9f;
+  border-radius: 50% 40% 30% 30% / 30% 40% 50% 60%;
+  position: relative;
+  left: 20px;
+}
+
+.shape2 {
+  background: #ff3;
+  border-radius: 40% 30% 50% 40% / 20% 60% 40% 50%;
+}
+
+div > p {
+  font-size: 16px;
+  margin: 0 0 0 25px;
+}
+
+/* About */
+.pr {
+  position: relative;
+}
+
+.pr > p {
+  line-height: 3px;
+  margin-top: 10px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.itigo > p {
+  position: absolute;
+  font-size: 18px;
+  top: 200px;
+  left: 180px;
+}
+
+.p01 {
+  margin-left: 20px;
+}
+
+.p02 {
+  margin-left: 34px;
+}
+
+
+/* 顔写真 */
+.face > a > img {
+  width: 185px;
+  height: 310px;
+  border-radius: 40%;
+}
+
