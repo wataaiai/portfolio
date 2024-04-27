@@ -1,158 +1,328 @@
 /* body全体 */
-body {
-  max-width: 1080px;
-  margin: 10px 10px;
-} 
+@media(min-width: 481px) {
+  
+  body {
+    min-width: 1080px;
+    margin: 10px  auto 10px auto;
+    white-space: nowrap;
+  } 
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0 0 50px 0;
+    color: #ff9900;
+    font-family: "HG丸ゴシックM-PRO" , sans-serif;
+    letter-spacing: 5px;
+  }
+  /* ナビゲーションメニュー */
+  /* ロゴ */
+  
+  /* sp用　ナビ　非表示 */
+  .nav-sp {
+    display: none;
+  }
+  
+  .logo > a > img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .nav {
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 300px;
+  }
+  
+  nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff9900;
+    font-family: "HiraKakuProN-W6" , sans-serif;
+  }
+  
+  
+  /* メイン画像  */
+  /* sp用　メイン画像　非表示 */
+  .main-photo-sp{
+    display: none;
+  }
+  
+  .main-photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /* 一期一会 */
+  .blend {
+    display: flex;
+    padding: 0 0 0 0;
+    margin: 88px 0 0 60px;
+  }
+  
+  .blend p {
+    font-family: "BIZ UDP明朝 Medium" , sans-serif;
+    box-sizing: border-box;
+    color: #565656;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    padding: 35px 0;
+    text-align: center;
+    mix-blend-mode: multiply;
+  }
+  
+  .shape1 {
+    background: #f9f;
+    border-radius: 50% 40% 30% 30% / 30% 40% 50% 60%;
+    position: relative;
+    left: 20px;
+  }
+  
+  .shape2 {
+    background: #ff3;
+    border-radius: 40% 30% 50% 40% / 20% 60% 40% 50%;
+  }
+  
+  /* About */
+  /* sp用　自己紹介文　非表示 */
+  .itigo-sp {
+    display: none;
+  }
 
-h1 {
-  text-align: center;
-  font-size: 36px;
-  color: #ff9900;
-  font-family: "Impact" , sans-serif;
-  letter-spacing: 5px;
-  margin: 30px 450px 30px 450px;
-  border: solid 2px #565656;
-  border-radius: 8px;
-}
+  .my-sp {
+    display: none;
+  }
 
-/* ナビゲーションメニュー */
-nav {
-  margin: 10px 10px;
+  .my {
+    position: relative;
+  }
+  
+  .pr > li {
+    align-self: center;
+    list-style: none;
+    line-height: 5px;
+    margin-top: 10px;
+    
+  }
+  
+  #about {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .itigo > p {
+    position: absolute;
+    font-size: 18px;
+    top: 200px;
+    left: 270px;
+  }
+  
+  .p01 {
+    margin-left: 20px;
+  }
+  
+  .p02 {
+    margin-left: 35px;
+  }
+  
+  
+  /* 顔写真 */
+  /* sp用　顔写真　非表示 */
+ .face-sp {
+  display: none;
+ }
+
+  .face > a > img {
+    right: 2px;
+    width: 185px;
+    height: 310px;
+    border-radius: 50%;
+  }
+  
+  /* Contact*/
+  /* sp用　非表示 */
+  #contact-sp {
+    display: none;
+  }
+
+  #contact {
+    margin-top: 120px;
+  }
+  
+  #contact > p {
+    text-align: center;
+  }
+  
+  .sns-btn {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  justify-content: center;
+  list-style: none;
 }
 
-.menu {
-  position: absolute;
-  top: 80px;
-  left: 650px;
-
-}
-
-nav a {
-  margin-top: auto;
-  text-decoration: none;
-  font-size: 28px;
-  color: #ff9900;
-  font-family: "HiraKakuProN-W6" , sans-serif;
-}
-
-div > a {
-  margin-left: 20px;
+.sns-btn li {
   margin-right: 20px;
 }
 
-nav a:link {
-  color: #ff9900;
+/* footer */
+/* sp用　非表示 */
+.footer-sp {
+  display: none;
 }
 
-nav a:visited {
-  color: #565656;
-}
-
-nav a:hover {
-  color: #565656;
-  text-decoration: underline #ff9900;
-}
-
-nav a:active {
-  color: #565656;
-}
-
-/* メイン画像  */
-.main-photo {
-  width: 100%;
-  display: flex; 
-  flex: content;
-}
-
-.main-photo > a > img {
-  width: 500px;
-  height: 250px;
-}
-
-/* キャッチコピー */
-.catch {
-  line-height: 2px;
-  text-align: left;
-  padding: 15px 0;
-  margin-left: 60px;
-  color: #565656;
-  position: relative;
-}
-
-/* 一期一会 */
-.blend {
-  display: flex;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  margin-top: 70px;
-}
-
-.blend p {
-  box-sizing: border-box;
-  color: #565656;
-  font-size: 38px;
-  width: 100px;
-  height: 100px;
-  padding: 20px 0;
+.footer {
+  font-size: 10px;
+  margin-top: 100px;
   text-align: center;
-  mix-blend-mode: multiply;
+}
 }
 
-.shape1 {
-  background: #f9f;
-  border-radius: 50% 40% 30% 30% / 30% 40% 50% 60%;
-  position: relative;
-  left: 20px;
+/* 　-------
+sp用　------- */
+
+@media (max-width: 480px) {
+  body {
+    margin: 10px auto 10px auto;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #ff9900;
+  }
+
+ /* pc用　ナビ　非表示 */
+ .nav {
+  display: none;
+ }
+
+/* ナビゲーション */
+.nav-sp {
+  display: flex;
+  margin-left: 10px;
 }
 
-.shape2 {
-  background: #ff3;
-  border-radius: 40% 30% 50% 40% / 20% 60% 40% 50%;
+.logo-sp > a {
+  color: #ff9900;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 10px;
 }
 
-div > p {
-  font-size: 16px;
-  margin: 0 0 0 25px;
+.logo-sp > a > img {
+  width: 30px;
+}
+
+/* メイン画像 */
+/* pc用　メイン画像　非表示 */
+.main-photo {
+  display: none;
+}
+
+.main-photo-sp {
+  display: flex;
+}
+
+.main-photo-sp > a > img {
+  width: 100%;
 }
 
 /* About */
-.pr {
-  position: relative;
+/* PC用　顔写真　非表示 */
+.face > a > img {
+  display: none;
 }
 
-.pr > p {
-  line-height: 3px;
-  margin-top: 10px;
-}
-
-#about {
+/* 顔写真 */
+.face-sp {
   display: flex;
+}
+
+.face-sp > a > img {
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* pc用　自己紹介文　非表示 */
+.pr {
+  display: none;
+}
+.itigo {
+  display: none;
+}
+
+.sp {
+  position: relative;
+  margin: 0 10px;
+}
+
+.pr > li {
+  display: none;
+}
+
+.pr-sp > li {
+  font-size: 10px;
+  list-style: none;
+}
+
+/* 一期一会 */
+/* PC用　　一期一会　非表示 */
+ .blend > p {
+  display: none;
+ }
+
+ .blend-sp {
+  display: flex;
+  padding: 0 0 0 0;
+  margin: 88px 0 0 60px;
+}
+
+/* contact */
+/* pc用　非表示 */
+#contact {
+  display: none;
+}
+
+#contact-sp > h1 {
+  margin-top: 50px;
+}
+
+#contact-sp > p {
+  text-align: center;
+  font-size: 10px;
+}
+
+.sns-btn-sp {
+  padding: 0 0 0 0;
+  display: flex;
+  list-style: none;
   justify-content: center;
 }
 
-.itigo > p {
-  position: absolute;
-  font-size: 18px;
-  top: 200px;
-  left: 180px;
+.sns-btn-sp > li > a > img {
+  padding: 0 5px;
+  width: 15px;
 }
 
-.p01 {
-  margin-left: 20px;
+/* フッター */
+/* pc用　非表示 */
+.footer {
+  display: none;
 }
 
-.p02 {
-  margin-left: 34px;
+.footer-sp {
+  font-size: 6px;
+  text-align: center;
+}
 }
 
 
-/* 顔写真 */
-.face > a > img {
-  width: 185px;
-  height: 310px;
-  border-radius: 40%;
-}
+
+
 

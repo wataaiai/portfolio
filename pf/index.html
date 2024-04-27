@@ -9,57 +9,127 @@
 </head>
 
 <body>
-  <!-- ナビゲーションメニュー -->
+  <!-- ナビゲーションメニュー PC用-->
   <header>
-    <nav>
+    <nav class="nav">
       <div class="logo">
-        <a href="index.html"><img src="img/logo.jpg" alt="ロゴマーク" width="120px" height="120px"></a>
-      </div>
-
-      <div class="menu">
+        <a href="index.html"><img src="img/logo.jpg" alt="ロゴマーク"></a>
         <a href="index.html#about">About</a>
         <a href="index.html#works">Works</a>
         <a href="index.html#contact">Contact</a>
       </div>
     </nav>
-  </header>
+
+    <!-- sp用　ナビ -->
+    <nav class="nav-sp">
+      <div class="logo-sp">
+        <a href="index.html"><img src="img/logo.jpg" alt="ロゴマーク"></a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#works">Works</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav> 
 
 <main>
   <article>
-    <!-- メイン画像 -->
-    <div class="main-photo">
-      <a href="index.html"><img src="img/happy.jpg" alt="happy"></a>
-      <a href="index.html"><img src="img/smile.jpg" alt="smile"></a>
+    <!-- メイン画像 pc用--> 
+      <div class="main-photo">
+        <a class="photo01"  href="index.html"><img src="img/happy.jpg" alt="happy"></a>
+        <a class="photo02"  href="index.html"><img src="img/smile.jpg" alt="smile"></a>
+      </div>
+    
+    <!-- 　sp用 メイン画像 -->
+    <div class="main-photo-sp">
+      <a class="photo01-sp"  href="index.html"><img src="img/happy.jpg" alt="happy"></a>
+      <a class="photo02-sp"  href="index.html"><img src="img/smile.jpg" alt="smile"></a>
     </div>
+  
 
-    <!-- About -->
+    <!-- About pc用-->
     <h1>About</h1>
     <section id="about">
       <div class="face">
         <a href="index.html">
         <img src="img/photo.jpg" alt="顔写真"></a>
+      </div>  
+    <div class="my">
+          <ul class="pr">
+            <li>2人のパワフルな女の子とトイプー1匹を育てています。</li><br>
+            <li>ガーデニングが趣味で、庭でたくさんのお花も育てています。</li><br>
+            <li>HTML、CSS、JavaScriptのスキルを身につけ、ホームページ作成に励んでいます。</li>
+          </ul>
+          
+          <!-- キャッチコピー pc用　-->
+          <div class="blend">
+            <p class="shape1">一期</p>
+            <p class="shape2">一会</p>
+          </div>
+
+          <div class="itigo">
+            <p>
+               この出会いを大切に、<br>
+              <span class="p01">その想いをカタチに、</span><br>
+              <span class="p02">キラリと輝く笑顔のために。</span>
+            </p>
+          </div> 
+         </div>    
+
+    <!-- sp用　顔写真 -->
+    <div class="sp">
+      <div class="face-sp">
+       <a href="index.html">
+       <img src="img/photo.jpg" alt="顔写真"></a>
+       
+       <!-- sp用　自己紹介文 -->
+       <div class="my-sp">
+         <ul class="pr-sp">
+           <li>2人のパワフルな女の子とトイプー1匹を育てています。</li><br>
+           <li>ガーデニングが趣味で、庭でたくさんのお花も育てています。</li><br>
+           <li>HTML、CSS、JavaScriptのスキルを身につけ、ホームページ作成に励んでいます。</li>
+          </ul>
+        </div>     
       </div>
+   </div>
 
-      <div class="pr">
-        <p>2人のパワフルな女の子とトイプー1匹を育てています。</p><br>
-        <p>ガーデニングが趣味で、庭でたくさんのお花も育てています。</p><br>
-        <p>HTML,CSS,JavaScript習得。</p>
-
-        <!-- キャッチコピー -->
-        <ul class="blend">
-          <p class="shape1">一期</p>
-          <p class="shape2">一会</p>
-        </ul> 
-        <div class="itigo">
-          <p>
-             この出会いを大切に、<br>
-            <span class="p01">その想いをカタチに、</span><br>
-            <span class="p02">キラリと輝く笑顔のために。</span>
-          </p>
-        </div>
-       </div>
    </section>
-  </article>
+
+
+   <!-- Works -->
+
+   <!-- Contact pc用　-->
+   <div id="contact">
+     <h1>Contact</h1>
+     <p>お気軽にお問い合わせください。</p>
+     <ul class="sns-btn">
+       <li><a href="https://twitter.com/" target="_blank">
+         <img src="img/logo-black.png" alt="twitter"></a></li>
+         <li><a href="https://www.instagram.com/" target="_blank">
+           <img src="img/Instagram_Glyph_Gradient.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+
+    <!-- sp用　Contact -->
+        <div id="contact-sp">
+          <h1>Contact</h1>
+          <p>お気軽にお問い合わせください。</p>
+          <ul class="sns-btn-sp">
+            <li><a href="https://twitter.com/" target="_blank">
+              <img src="img/logo-black.png" alt="twitter"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank">
+                <img src="img/Instagram_Glyph_Gradient.png" alt="Instagram"></a></li>
+               </ul>
+             </div>
+
+      </article>
+<!-- フッター pc用 -->
+     <footer class="footer">
+        <p>&copy; Aiko Watanabe. All rights reserved.</p>
+    </footer>
+<!-- sp用　フッター -->
+    <footer class="footer-sp">
+      <p>&copy; Aiko Watanabe. All rights reserved.</p>
+  </footer>
 </main>
 </body>
 </html>
+
